@@ -35,7 +35,6 @@ public class CarServiceRecordsController {
         log.info("received request: <{}>", vin);
         final CarServiceResponse carServiceResponse = carRecordsService.getCarRecords(vin);
         log.info("Successful fetch: <{}>", carServiceResponse);
-        log.info("Successful fetchrtt: <{}>", carServiceResponse);
         return ResponseEntity.ok(carServiceResponse);
     }
 }
