@@ -5,7 +5,7 @@ pipeline {
         buildDiscarder(logRotator(numToKeepStr: '10'))
      }
     triggers {
-        pollSCM('')
+        githubPush()
     }
     stages {
         stage('build') {
