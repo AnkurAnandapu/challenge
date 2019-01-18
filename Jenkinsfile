@@ -20,6 +20,10 @@ pipeline {
         stage('compile') {
             steps {
                 sh 'mvn compile'
+                sh '''
+                    echo "Multiline shell steps works too"
+                    ls -lah
+                '''
             }
         }
     }
