@@ -14,9 +14,6 @@ pipeline {
                 sh 'printenv'
             }
         }
-    }
-
-    stages {
         stage('compile') {
             steps {
                 sh 'mvn compile'
